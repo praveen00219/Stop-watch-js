@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+    <div id="stopwatch" class="text-center py-8 px-12  bg-gray-800 rounded-lg shadow-lg max-w-md mx-auto">
+        <div id="display" class="text-5xl font-mono mb-8">00:00:00.00</div>
+        <div class="space-x-5 mb-4">
+            <button id="start"
+                class="px-4 py-2 bg-green-500 hover:bg-green-600 rounded btn-click-animation">Start</button>
+            <button id="stop" class="px-4 py-2 bg-red-500 hover:bg-red-600 rounded btn-click-animation">Stop</button>
+            <button id="reset"
+                class="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 rounded btn-click-animation">Reset</button>
+            <button id="lap" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded btn-click-animation">Lap</button>
+        </div>
+        <ul id="laps" class="text-left text-sm list-disc pl-5"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
